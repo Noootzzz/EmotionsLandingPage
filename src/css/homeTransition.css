@@ -1,18 +1,45 @@
 .homeTransition {
+    box-shadow: 0 0 20px 20px black;
     position: sticky;
     top: 0;
     left: 0;
     background-color: black;
-    z-index: 100;
+    z-index: 10;
     display: flex;
     height: 100vh;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 15%;
     color: white;
     font-size: 4rem;
 }
 
 .homeTransition img {
-    border: 1px solid white;
+    height: 70vh;
+    filter: grayscale(var(--grayscale-value, 0%)); /* Utilisation de la variable --grayscale-value */
+}
+
+.homeTransition::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(var(--blur-value, 40px)); /* Utilisation de la variable --blur-value */
+    background-color: transparent;
+    z-index: 1;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: relative;
+}
+.counter {
+    font-variant-numeric: tabular-nums;
+}
+.counter-container span {
+    font-size: 6rem;
+    opacity: .2;
+    font-variant-numeric: tabular-nums;
 }
