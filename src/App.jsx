@@ -1,15 +1,16 @@
 import './App.css'
+import './css/global.css'
 
-//Import components
 
-import Header from './components/header'
+import Homepage from './components/homepage'
+
+
 
 function App() {
 
   return (
     <>
-    <Header />
-    <h1>Projet Lancé</h1>
+    <Homepage />
     </>
   )
 }

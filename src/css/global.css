@@ -1,10 +1,15 @@
 @import url(reset.css);
 @import url(header.css);
-
+@import url(home.css);
 
 @font-face {
     font-family: 'Kiona';
     src: url('../fonts/Kiona-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kiona-bold';
+    src: url('../fonts/Kiona-Bold.ttf') format('truetype');
 }

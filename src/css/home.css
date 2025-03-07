@@ -1,0 +1,78 @@
+.homepage{
+    font-family: 'Kiona-bold';
+    color: #333;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/bghome.png');
+    background-size: cover;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.homepage-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.homepage-logo h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 5rem;
+    color: #B9B9B9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-logo h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    width: 100%; 
+    height: 8px; 
+    background-color: #505050; 
+    transition: width 0.5s ease; 
+    transform-origin: left center; 
+}
+
+.homepage-logo h1:hover::after {
+    width: 0; 
+}
+
+.homepage-content{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.homepage-content p{
+    width: 100%;
+    text-align: right;
+}
+
+.homepage-content p::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 86%; 
+    width: 30%; 
+    height: 3px; 
+    background-color: #505050; 
+    transition: width 0.5s ease; 
+    transform-origin: left center; 
+}
+.homepage-content p::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 98%; 
+    width: 50%; 
+    height: 3px; 
+    background-color: #505050; 
+    transition: width 0.5s ease; 
+    transform-origin: left center; 
+}

@@ -1,11 +1,11 @@
 const Header = () => {
   return (
     <header>
-        <div>
+        <div className="logo">
             <h2>Emotion Path</h2>
         </div>
 
-        <div>
+        <div className="menu">
             <ul>
                 <li>
                     <a href="#nostalgia">nostalgia</a>
