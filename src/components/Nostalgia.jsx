@@ -31,9 +31,20 @@ const Nostalgia = () => {
         };
     }, []);
     
-    const backgroundTransform = `translateY(0)`;
-    const foregroundTransform = `translateY(0)`;
+    const backgroundTransform = `translateY(${scrollPosition * 5}vh)`;
+    const foregroundTransform = `translateY(${scrollPosition * 5}vh)`;
     const newBackgroundTransform = `translateY(${200 - (scrollPosition * 200)}vh)`;
+    
+    // Calculer l'assombrissement de l'image nostalgianobg
+    // Plus la valeur est élevée, plus l'image sera assombrie
+    // Commencer l'assombrissement à 70% du défilement total
+    const darkenThreshold = 0.7;
+    const darkenIntensity = scrollPosition > darkenThreshold 
+        ? (scrollPosition - darkenThreshold) / (1 - darkenThreshold) 
+        : 0;
+    
+    // Calculer la luminosité (1 = normal, 0 = noir complet)
+    const foregroundBrightness = Math.max(0.3, 1 - darkenIntensity);
     
     return (
         <section className="nostalgia" id="nostalgia" ref={sectionRef}>
@@ -41,7 +52,7 @@ const Nostalgia = () => {
                 <img 
                     src={nostalgiaJpeg} 
                     alt="Nostalgia background" 
-                    style={{ transform: backgroundTransform }}
+                    style={{ transform: backgroundTransform, opacity: 1 - scrollPosition * 0.3}}
                 />
             </div>
             
@@ -50,6 +61,7 @@ const Nostalgia = () => {
                     src={eyeBackground} 
                     alt="Eye background" 
                     style={{ transform: newBackgroundTransform }}
+                    className="eye"
                 />
             </div>
             
@@ -57,13 +69,17 @@ const Nostalgia = () => {
                 <img 
                     src={nostalgiaNoBackground} 
                     alt="Nostalgia foreground" 
-                    style={{ transform: foregroundTransform }}
+                    style={{ 
+                        transform: foregroundTransform,
+                        filter: `brightness(${foregroundBrightness})`,
+                        transition: 'transform 0.1s ease-out, filter 0.1s ease-out'
+                    }}
                 />
             </div>
             
             <div className="nostalgia-content">    
                 <div className="nostalgia-title">
-                    <h1 style={{ opacity: 1 - scrollPosition }}>
+                <h1 style={{ opacity: 1 - scrollPosition * 0.9 }}>
                     <GlitchText
                         baseIntensity={0.1}
                         hoverIntensity={hoverIntensity}

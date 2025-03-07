@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: black
 }
 
 .nostalgia-container {
@@ -24,6 +25,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    box-shadow: 0 0 100px 100px black;
 }
 
 .nostalgia-layer img {
@@ -66,9 +68,12 @@
 
 .nostalgia-title h1 canvas {
     width: 50%;
-    opacity: 0.7;
 }
 
 .debug-indicator {
     display: block; 
+}
+
+.eye{
+    box-shadow: 0 0 100px 100px black;
 }
