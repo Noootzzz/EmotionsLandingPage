@@ -1,9 +1,10 @@
 import './App.css'
 import './css/global.css'
 
-
 import Homepage from './components/homepage'
 import Noise from './components/Noise'
+import HomeTransition from './components/HomeTransition'
+
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 
     </div>
     <Homepage />
+    <HomeTransition />
     </>
   )
 }
