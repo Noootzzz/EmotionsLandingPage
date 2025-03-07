@@ -53,6 +53,7 @@ export default function HomeTransition() {
                 <img
                     src="/img/family.png"
                     alt="Photo de famille classique en portrait."
+                    style={{ filter: `grayscale(${filterValue * 100}%)` }}
                 />
             </div>
             <div style={{ height: "200vh" }}></div> {/* Allonge la page pour le scroll sticky */}

@@ -4,6 +4,8 @@ import './css/global.css'
 import Homepage from './components/homepage'
 import Noise from './components/Noise'
 import HomeTransition from './components/HomeTransition'
+import Nostalgia from './components/Nostalgia'
+
 
 
 
@@ -30,6 +32,10 @@ function App() {
     </div>
     <Homepage />
     <HomeTransition />
+    <div className="nostalgia-container">
+      <Nostalgia />
+    </div>
+
     </>
   )
 }

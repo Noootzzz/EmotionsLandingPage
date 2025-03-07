@@ -16,4 +16,5 @@ ul{
 body{
     font-family: 'Kiona', sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
