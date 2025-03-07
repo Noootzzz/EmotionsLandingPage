@@ -30,7 +30,7 @@ export default function HomeTransition() {
                     {Math.floor(counterValue)} {/* Affiche la valeur du compteur */}
                 </h2>
                 <img
-                    src="/img/family"
+                    src="/img/family.png"
                     alt=""
                     style={{ filter: `grayscale(${filterValue * 100}%)` }}
                 />
