@@ -16,9 +16,9 @@ function App() {
 
         patternSize={250}
 
-        patternScaleX={2}
+        patternScaleX={3}
 
-        patternScaleY={2}
+        patternScaleY={3}
 
         patternRefreshInterval={2}
 
