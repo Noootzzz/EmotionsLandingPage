@@ -1,0 +1,99 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    opacity: 1;
+    animation: fadeOut 2s ease-in-out 4s forwards;
+    overflow: hidden;
+  }
+  
+  .loader-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: flicker 1.5s infinite alternate;
+    position: relative;
+  }
+  
+  .blood-drop {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    bottom: -15px;
+    left: 50%;
+    animation: bloodDrip 1.5s infinite ease-in-out;
+  }
+  
+  .blood-drop.second {
+    left: 30%;
+    animation-delay: 0.5s;
+  }
+  
+  .blood-drop.third {
+    left: 70%;
+    animation-delay: 1s;
+  }
+  
+  .horror-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .static-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 5px, rgba(0,0,0,0.05) 5px, rgba(0,0,0,0.05) 10px);
+    opacity: 0.1;
+    animation: staticNoise 0.2s infinite;
+  }
+  
+  .flicker-light {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.05);
+    animation: flicker 0.3s infinite;
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes flicker {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.1; }
+  }
+  
+  @keyframes staticNoise {
+    0% { opacity: 0.05; }
+    50% { opacity: 0.15; }
+    100% { opacity: 0.05; }
+  }
+  
+  @keyframes bloodDrip {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(15px); opacity: 0.7; }
+    100% { transform: translateY(30px); opacity: 0; }
+  }
+  
