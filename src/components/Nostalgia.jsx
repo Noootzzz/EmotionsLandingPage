@@ -35,15 +35,11 @@ const Nostalgia = () => {
     const foregroundTransform = `translateY(${scrollPosition * 5}vh)`;
     const newBackgroundTransform = `translateY(${200 - (scrollPosition * 200)}vh)`;
     
-    // Calculer l'assombrissement de l'image nostalgianobg
-    // Plus la valeur est élevée, plus l'image sera assombrie
-    // Commencer l'assombrissement à 70% du défilement total
     const darkenThreshold = 0.7;
     const darkenIntensity = scrollPosition > darkenThreshold 
         ? (scrollPosition - darkenThreshold) / (1 - darkenThreshold) 
         : 0;
     
-    // Calculer la luminosité (1 = normal, 0 = noir complet)
     const foregroundBrightness = Math.max(0.3, 1 - darkenIntensity);
     
     return (
