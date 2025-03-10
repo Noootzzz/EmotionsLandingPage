@@ -1,0 +1,20 @@
+.nost-transition {
+  height: 200vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 5000;
+  background-color: black;
+}
+
+.nost-transition-img{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.nost-transition-img img{
+  width: 100%;
+  box-shadow: 0 0 200px 200px black;
+  opacity: 0.5;
+}
