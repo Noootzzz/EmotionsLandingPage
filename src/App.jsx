@@ -6,7 +6,7 @@ import Noise from './components/Noise'
 import HomeTransition from './components/HomeTransition'
 import Nostalgia from './components/Nostalgia'
 import NostalgiaTransition from './components/NostalgiaTransition'
-
+import CanvasLightEffect from './components/CanvasLight'
 
 
 
@@ -39,6 +39,7 @@ function App() {
 
     <NostalgiaTransition />
 
+    <CanvasLightEffect />
     </>
   )
 }

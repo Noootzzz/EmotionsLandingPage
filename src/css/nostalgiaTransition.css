@@ -5,6 +5,7 @@
   overflow: hidden;
   z-index: 5000;
   background-color: black;
+  box-shadow: 0 0 20px 20px black;
 }
 
 .nost-transition-img{
