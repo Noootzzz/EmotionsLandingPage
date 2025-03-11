@@ -9,6 +9,7 @@ import Nostalgia from './components/Nostalgia'
 import NostalgiaTransition from './components/NostalgiaTransition'
 import CanvasLightEffect from './components/CanvasLight'
 import Frustration from './components/frustration'
+import UncomfortableEffects from './components/UncomfortableEffect'
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
       <div className="section-blend blend-glow"></div>
       
       <CanvasLightEffect />
+
+      <UncomfortableEffects />
+
       <Frustration />
     </>
   )

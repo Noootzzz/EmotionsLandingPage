@@ -3,6 +3,7 @@
 @import url(home.css);
 @import url(nostalgiaTransition.css);
 @import url(loader.css);
+@import url(uncomfortable.css);
 
 .noise-overlay {
     position: absolute;
@@ -23,6 +24,7 @@
     font-family: 'Kiona-bold';
     src: url('../fonts/Kiona-Bold.ttf') format('truetype');
 }
+
 
 /* Section Blend - Transitions douces entre sections */
 .section-blend {
