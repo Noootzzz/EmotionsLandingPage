@@ -60,7 +60,8 @@ const CanvasLightEffect = () => {
 
     return (
         <section 
-            className="canvas-light-effect" 
+            className="canvas-light-effect"
+            id="uncomfortable" 
             style={{
                 position: "relative", 
                 width: "100vw", 
@@ -80,7 +81,7 @@ const CanvasLightEffect = () => {
                 }}
             />
             <canvas ref={canvasRef} style={{ position: "absolute", top: 0, left: 0 }}></canvas>
-            <h1 style={{ position: "relative", zIndex: 110, color: "white", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <h1 style={{position: "relative", zIndex: 110, color: "white", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", opacity: 0.3}}>
                 <GlitchText
                     baseIntensity={0.1}
                 >
