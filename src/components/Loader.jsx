@@ -9,7 +9,7 @@ const Loader = ({ onFinish }) => {
         const timer = setTimeout(() => {
           setIsVisible(false);
           onFinish();
-        }, 5000); // Durée de 5 secondes
+        }, 5000); 
     
         return () => clearTimeout(timer);
       }, [onFinish]);

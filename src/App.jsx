@@ -8,6 +8,7 @@ import HomeTransition from './components/HomeTransition'
 import Nostalgia from './components/Nostalgia'
 import NostalgiaTransition from './components/NostalgiaTransition'
 import CanvasLightEffect from './components/CanvasLight'
+import Frustration from './components/frustration'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <div className="section-blend blend-glow"></div>
       
       <CanvasLightEffect />
+      <Frustration />
     </>
   )
 }

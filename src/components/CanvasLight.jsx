@@ -65,8 +65,9 @@ const CanvasLightEffect = () => {
             style={{
                 position: "relative", 
                 width: "100vw", 
-                height: "100vh", 
+                height: "110vh", 
                 zIndex: 100,
+                boxShadow: "0 0 100px 100px rgba(0, 0, 0)"
             }}
         >
             <img 
@@ -80,8 +81,8 @@ const CanvasLightEffect = () => {
                     filter: "brightness(0.4)"
                 }}
             />
-            <canvas ref={canvasRef} style={{ position: "absolute", top: 0, left: 0 }}></canvas>
-            <h1 style={{position: "relative", zIndex: 110, color: "white", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", opacity: 0.3}}>
+            <canvas ref={canvasRef} style={{ position: "absolute", top: 0, left: 0,height: "110vh" }}></canvas>
+            <h1 style={{position: "relative", zIndex: 110, color: "white", height: "110vh", display: "flex", justifyContent: "center", alignItems: "center", opacity: 0.3}}>
                 <GlitchText
                     baseIntensity={0.1}
                 >

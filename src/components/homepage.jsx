@@ -3,7 +3,7 @@ import Header from './header'
 
 const homepage = () => {
   return (
-    <section className='homepage'>
+    <section className='homepage' id='homepage'>
 
         <Header />
         

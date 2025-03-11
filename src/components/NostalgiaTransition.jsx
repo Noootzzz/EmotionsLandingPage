@@ -17,13 +17,13 @@ const NostalgiaTransition = () => {
             const relativePosition = Math.min(Math.max(sectionTop / sectionHeight, 0), 1);
             
             if (relativePosition < 0.5) {
-                const opacity = relativePosition * 2; // 0 à 1
+                const opacity = relativePosition * 2; 
                 container.style.setProperty('--terre-opacity', '1');
                 container.style.setProperty('--inter-opacity', opacity);
                 container.style.setProperty('--transition-progress', relativePosition);
             } 
             else {
-                const opacity = 2 - relativePosition * 2; // 1 à 0
+                const opacity = 2 - relativePosition * 2; 
                 container.style.setProperty('--terre-opacity', opacity);
                 container.style.setProperty('--inter-opacity', '1');
                 container.style.setProperty('--transition-progress', relativePosition);
