@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import backgroundImage from "../../public/img/uncomfbg.png";
-import GlitchText from './glitchtext';
+import GlitchText from "./GlitchText";
 
 
 const CanvasLightEffect = () => {

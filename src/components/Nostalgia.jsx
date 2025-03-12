@@ -1,5 +1,5 @@
 import "../css/nostalgia.css";
-import GlitchText from './glitchtext';
+import GlitchText from './GlitchText';
 import React, { useEffect, useState, useRef } from "react";
 import nostalgiaJpeg from '../../public/img/nostalgia.jpeg';
 import nostalgiaNoBackground from '../../public/img/nostalgianobg.png';
