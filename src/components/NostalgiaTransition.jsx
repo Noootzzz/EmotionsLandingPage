@@ -40,10 +40,10 @@ const NostalgiaTransition = () => {
         <section className="nost-transition" ref={sectionRef}>
             <div className="nost-transition-container" ref={containerRef}>
                 <div className="nost-transition-img terre-container">
-                    <img className="terre" src="../../public/img/terre.png" alt="sous terrain" />
+                    <img className="terre" src="/img/terre.png" alt="sous terrain" />
                 </div>
                 <div className="nost-transition-img inter-container">
-                    <img className="inter" src="../../public/img/interogation.png" alt="????" />
+                    <img className="inter" src="/img/interogation.png" alt="????" />
                 </div>
                 <div className="transition-overlay"></div>
             </div>
