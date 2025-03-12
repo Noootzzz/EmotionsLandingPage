@@ -23,6 +23,10 @@ const Loader = ({ onFinish }) => {
             <span className="blood-drop second"></span>
             <span className="blood-drop third"></span>
           </p>
+        <div>
+
+        </div>
+
           <div className="horror-animation">
             <div className="static-effect"></div>
             <div className="flicker-light"></div>
