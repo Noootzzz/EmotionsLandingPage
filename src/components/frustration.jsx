@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "../css/frustration.css";
-import GlitchText from './glitchtext';
+import GlitchText from './GlitchText';
 
 //section button
 
